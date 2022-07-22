@@ -5,7 +5,7 @@
 *::after {
     margin: 0;
     padding: 0;
-    box-sizing: content-box;
+    box-sizing: border-box;
 }
 :root {
     --color-blue: #679ef8;
@@ -75,7 +75,7 @@ header {
     border: 3px solid var(--color-grey);
     padding: 2rem 1.5rem;
     margin: 1.5rem;
-    min-height: 20rem;
+    min-height: 23rem;
     border-radius: 3px;
     background-color: white;
 }
@@ -149,5 +149,8 @@ a:visited {
 @media only screen and (max-width: 500px) {
     .section {
         grid-template-columns: 1fr;
+    }
+    .article-title {
+        font-size: 2rem;
     }
 }
