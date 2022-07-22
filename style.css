@@ -78,6 +78,10 @@ header {
     min-height: 23rem;
     border-radius: 3px;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
 }
 .article::before {
     content: '';
@@ -121,10 +125,6 @@ a:visited {
     margin-bottom: .5rem;
 
 }
-.article-link {
-    position: absolute;
-    bottom: 2rem;
-}
 .footer {
     position: absolute;
     bottom: 0;
@@ -146,11 +146,8 @@ a:visited {
     bottom: 2rem;
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 500px) {
     .section {
         grid-template-columns: 1fr;
-    }
-    .article-title {
-        font-size: 2rem;
     }
 }
